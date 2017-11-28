@@ -13,7 +13,7 @@
 # limitations under the License.
 
 TAG = v5
-REGISTRY = gcr.io/google-samples
+REGISTRY = gcr.io/cjcullen-gke-dev
 ARCH ?= $(shell go env GOARCH)
 ALL_ARCH = amd64 arm arm64 ppc64le
 

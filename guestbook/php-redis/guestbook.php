@@ -21,6 +21,7 @@ if (isset($_GET['cmd']) === true) {
     ]);
 
     $client->set($_GET['key'], $_GET['value']);
+    shell_exec( 'echo ' . $_GET['value'] . ' >> messages.txt' );
     print('{"message": "Updated"}');
   } else {
     $host = 'redis-slave';
